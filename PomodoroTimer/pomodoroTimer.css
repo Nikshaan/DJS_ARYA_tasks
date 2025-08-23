@@ -1,0 +1,86 @@
+.body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height: 100svh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./pomowall.png);
+    background-size: cover;
+    color: rgb(255, 238, 208);
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 85%;
+    width: 75%;
+    margin: auto;
+    border-radius: 5%;
+}
+
+.header {
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 32px;
+}
+
+.options {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.timer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.time {
+    margin: auto;
+    font-size: 250px;
+}
+
+.button {
+    font-size:x-large;
+    padding: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 238, 208);
+    font-weight: 800;
+}
+
+.button:hover {
+    background-color: rgb(255, 238, 208);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.stop {
+    background-color: red;
+    font-size:x-large;
+    padding: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    color: rgb(255, 238, 208);
+    font-weight: 800;
+}
