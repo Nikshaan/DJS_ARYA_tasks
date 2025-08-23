@@ -1,0 +1,210 @@
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.row-1 {
+    background-color: black;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todolist {
+    border-radius: 10px;
+    background-color: #F7374F;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.expenses {
+    border-radius: 10px;
+    color: white;
+    background-color: #88304E;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.itemDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#itemType {
+    height: 30px;
+    width: 40%;
+    padding: 2px;
+}
+
+#itemPrice {
+    height: 30px;
+    width: 40%;
+    padding: 2px;
+}
+
+#addItemBtn {
+    margin-top: 5px;
+    height: 25px;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.row-2 {
+    background-color: black;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    gap: 5px;
+    margin: auto;
+}
+
+.weather {
+    color: white;
+    background-color: #522546;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.weatherRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.github {
+    border-radius: 10px;
+    color: white;
+    background-color: #2C2C2C;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+#list {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.todoDiv {
+    margin: auto;
+    width: 98%;
+    display: flex;
+    background-color: greenyellow;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 2px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.todoP {
+    word-break: break-all;
+}
+
+.deleteBtn {
+    background-color: red;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todoEntry {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+#addTodoBtn {
+    margin-top: 2px;
+    height: 25px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#todoInput {
+    width: 70%;
+    height: 25px;
+}
+
+.heading {
+    color: white;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.progress{
+  width: 0%;
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+#contributionsList {
+    text-align: left;
+}
+
+.contriDiv {
+    display: flex;
+    justify-items: center;
+}
+
+.expensesTotal {
+    color: black;
+    display: flex;
+    height: 20px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+}
+
+.expensesIndividual {
+    width: 100%;
+    height: 20px;
+    background-color: green;
+    border: 2px solid black;
+    font-weight: 500;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Nikshaan</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="icon" type="image/x-icon" href="images/steve.jpg">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row-1">
+            <div class="todolist">
+                <p class="heading">TODOLIST</p>
+                <div class="todoEntry">
+                    <input type="text" id="todoInput" placeholder="Enter todo: ">
+                    <button type="submit" id="addTodoBtn">+</button>
+                </div>
+                <div id="list"></div>
+            </div>
+            <div class="expenses">
+                <p class="heading">EXPENSE MANAGER</p>
+                <div class="itemDiv">
+                    <input type="text" placeholder="Item type: " id="itemType" />
+                    <input type="text" placeholder="Item price: " id="itemPrice" />
+                    <button type="submit" id="addItemBtn">+</button>
+                </div>
+                <div class="expensesTotal" id="expensesTotal"></div>
+            </div>
+            <div class="weather">
+                <div class="weatherRow">
+                    <img src="images/" id="weatherIcon" height="80px" width="80px"/>
+                    <p id="overall"></p>
+                </div>
+                <div class="weatherRow">
+                    <p>Temperature</p>
+                    <p id="temp"></p>
+                </div>
+                <div class="weatherRow">
+                    <p>Feels like</p>
+                    <p id="feels"></p>
+                </div>
+                <div class="weatherRow">
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="weatherRow">
+                    <p>Pressure</p>
+                    <p id="pressure"></p>
+                </div>
+                <div class="weatherRow">
+                    <p>Wind speed</p>
+                    <p id="windSpeed"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="github">
+                <p class="heading">PAST 10 DAYS OF GITHUB CONTRIBUTIONS</p>
+                <div id="contributionsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
