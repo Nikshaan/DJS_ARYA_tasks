@@ -17,6 +17,7 @@ class gameScene extends Phaser.Scene{
     preload(){
         this.load.image('player', 'Psyduck.png');
         this.load.image('pokeball', 'Pokeball.png');
+        this.load.audio('bgMusic', 'music.mp3'); 
     }
 
     create(){
@@ -29,6 +30,8 @@ class gameScene extends Phaser.Scene{
         this.pokeballs = [];
         this.lastRoadY = -this.roadHeight;
         this.playerStartY = 0;
+        this.music = this.sound.add('bgMusic', { loop: true });
+        this.music.play();
 
         this.cameras.main.setBounds(0, -10000, this.width, 20000);
 
@@ -101,6 +104,7 @@ class gameScene extends Phaser.Scene{
                 this.pokeballs.forEach(pokeball => pokeball.destroy());
                 this.roads = [];
                 this.pokeballs = [];
+                this.music.stop();
 
                 for(let i = 0; i < 5; i++){
                     const y = -this.roadHeight*(i+1);
@@ -139,6 +143,7 @@ class gameScene extends Phaser.Scene{
                 this.cameras.main.scrollY = 0;
                 this.cameras.main.startFollow(this.player, true, 0.1, 0.1);
                 this.gameOverGroup.children.entries.forEach(child => child.setVisible(false));
+                this.music.play();
             }
             return;
         }
